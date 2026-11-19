@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main()
+{
+    int bpm;
+
+    printf("Enter your heart rate: ");
+    scanf("%d", &bpm);
+
+    if (bpm <= 0)
+        printf("Invalid heart rate");
+    else if (bpm < 60)
+        printf("Below typical adult resting range");
+    else if (bpm <= 100)
+        printf("Within typical adult resting range");
+    else
+        printf("Above typical adult resting range");
+
+    return 0;
+}
